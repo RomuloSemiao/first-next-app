@@ -2,14 +2,14 @@ export default function DashboardLayout({ children } : { children: React.ReactNo
     return (
         <div>
             <header className="h-20 border-b border-zinc-800 flex items-center">
-                <div className="container mx-auto bg-red-500 px-10">
+                <div className="container mx-auto">
                     <strong>
                         AudaceCars
                     </strong>
                 </div>
             </header>
 
-            <div className="container mx-auto px-10">
+            <div className="container mx-auto">
                 {children}
             </div>
         </div>

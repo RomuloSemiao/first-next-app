@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link"
 
 async function getMakes() {
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await new Promise(resolve => setTimeout(resolve, 3000))
 
     return ['Audi', 'BMW', 'Mercedes', 'Nissan', 'Subaru']
 }
@@ -15,7 +15,7 @@ export default async function Makes() {
     const makes = await getMakes()
 
     return (
-        <div className="container mx-auto px-10">
+        <div className="container mx-auto">
             <h1 className="mb-4 mt-10 font-extrabold">Marcas</h1>
 
             <div className="grid grid-cols-5 gap-4">
